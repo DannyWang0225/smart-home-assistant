@@ -1,0 +1,10 @@
+requests>=2.31.0
+paho-mqtt>=2.0.0
+pyaudio
+funasr
+modelscope
+edge-tts
+pydub
+torch
+torchaudio
+numpy
