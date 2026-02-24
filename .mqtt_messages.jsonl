@@ -1,0 +1,12 @@
+{"topic": "smart_home/command", "payload": "{\"type\": \"ac\", \"device\": \"空调\", \"action\": \"开\", \"timestamp\": \"2026-01-21T12:27:29.592991\"}", "timestamp": "2026-01-21T12:27:29.593690"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"ac\", \"device\": \"空调\", \"action\": \"开\", \"timestamp\": \"2026-02-07T11:22:05.331689\"}", "timestamp": "2026-02-07T11:22:05.331689"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"ac\", \"device\": \"空调\", \"action\": \"开\", \"timestamp\": \"2026-02-08T19:34:17.936054\"}", "timestamp": "2026-02-08T19:34:17.936563"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"window\", \"device\": \"窗户\", \"action\": \"开\", \"timestamp\": \"2026-02-22T18:08:38.218409\"}", "timestamp": "2026-02-22T18:08:38.219102"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"temperature\", \"device\": \"\", \"action\": \"检测\", \"timestamp\": \"2026-02-22T18:10:53.784083\"}", "timestamp": "2026-02-22T18:10:53.784083"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"ac\", \"device\": \"空调\", \"action\": \"开\", \"timestamp\": \"2026-02-22T18:22:54.401664\"}", "timestamp": "2026-02-22T18:22:54.404023"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"window\", \"device\": \"窗户\", \"action\": \"开\", \"timestamp\": \"2026-02-22T18:23:29.838601\"}", "timestamp": "2026-02-22T18:23:29.838601"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"light\", \"device\": \"灯光\", \"action\": \"开\", \"timestamp\": \"2026-02-22T18:40:19.266676\"}", "timestamp": "2026-02-22T18:40:19.268575"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"ac\", \"device\": \"空调\", \"action\": \"关\", \"timestamp\": \"2026-02-22T18:40:46.134185\"}", "timestamp": "2026-02-22T18:40:46.134185"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"window\", \"device\": \"窗户\", \"action\": \"开\", \"timestamp\": \"2026-02-22T18:40:46.135710\"}", "timestamp": "2026-02-22T18:40:46.135710"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"ac\", \"device\": \"ac\", \"action\": \"开\", \"timestamp\": \"2026-02-22T18:55:12.925331\"}", "timestamp": "2026-02-22T18:55:12.925331"}
+{"topic": "smart_home/command", "payload": "{\"type\": \"ac\", \"device\": \"ac\", \"action\": \"关\", \"timestamp\": \"2026-02-22T18:55:13.652099\"}", "timestamp": "2026-02-22T18:55:13.652099"}

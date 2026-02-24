@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  mqtt-broker:
+    image: eclipse-mosquitto:2.0
+    container_name: smart-home-mqtt
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    networks:
+      - smart-home-network
+    healthcheck:
+      test: ["CMD", "mosquitto_sub", "-t", "$$SYS/#", "-C", "1", "-W", "3"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  smart-home-assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smart-home-assistant
+    restart: unless-stopped
+    depends_on:
+      mqtt-broker:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./cache:/app/cache
+    environment:
+      - MQTT_HOST=mqtt-broker
+      - MQTT_PORT=1883
+      - MODEL_NAME=qwen2.5:7b
+    networks:
+      - smart-home-network
+    stdin_open: true
+    tty: true
+
+networks:
+  smart-home-network:
+    driver: bridge
